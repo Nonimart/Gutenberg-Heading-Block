@@ -1,0 +1,29 @@
+.homegrade-blocks-custom-heading.has-icon {
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: "";
+		background-color: red;
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		padding: 20px;
+		display: inline-block;
+		margin-right: 10px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&.has-icon--key::before {
+		background-image: url("../src/img/icon_key.svg");
+	}
+	&.has-icon--house::before {
+		background-image: url("../src/img/icon_house.svg");
+	}
+	&.has-icon--bulb::before {
+		background-image: url("../src/img/icon_bulb.svg");
+	}
+	&.has-icon--chain::before {
+		background-image: url("../src/img/icon_chain.svg");
+	}
+}

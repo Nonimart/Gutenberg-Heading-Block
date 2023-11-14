@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "homegrade-content-blocks/content-heading",
+	"version": "0.1.0",
+	"title": "Titre",
+	"category": "homegrade-blocks",
+	"icon": "smiley",
+	"description": "Bloc de titrage h2/h3/h4 avec ou sans icône",
+	"supports": {
+		"html": false,
+		"renaming": true
+	},
+	"textdomain": "homegrade-theme__bloks-texte-fonctionnel",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"headingLevel": {
+			"type": "string",
+			"default": "h3"
+		},
+		"hasIcon": {
+			"type": "boolean",
+			"default": false
+		},
+		"iconName": {
+			"type": "string",
+			"default": "key"
+		}
+	}
+}
